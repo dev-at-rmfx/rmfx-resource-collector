@@ -1,0 +1,169 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "elbv2",
+    "region": "us-east-1",
+    "loadbalancersv2": {
+        "arn:aws:elasticloadbalancing:us-east-1:975049982984:loadbalancer/app/dev-load-balancer/aa09e32587ce1e00": {
+            "name": "dev-load-balancer",
+            "region": "us-east-1",
+            "type": "application",
+            "access_logs": "false",
+            "desync_mitigation_mode": "defensive",
+            "deletion_protection": "false",
+            "dns": "dev-load-balancer-77178029.us-east-1.elb.amazonaws.com",
+            "drop_invalid_header_fields": "false",
+            "listeners": {
+                "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener/app/dev-load-balancer/aa09e32587ce1e00/8a15dff0729f74f0": {
+                    "region": "us-east-1",
+                    "port": 80,
+                    "protocol": "HTTP",
+                    "ssl_policy": "",
+                    "rules": [
+                        {
+                            "arn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener-rule/app/dev-load-balancer/aa09e32587ce1e00/8a15dff0729f74f0/148e4cd9a9417492",
+                            "actions": [
+                                {
+                                    "Type": "forward",
+                                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/dev-instance-target-group/a07434ac4e01e769",
+                                    "ForwardConfig": {
+                                        "TargetGroups": [
+                                            {
+                                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/dev-instance-target-group/a07434ac4e01e769",
+                                                "Weight": 1
+                                            }
+                                        ],
+                                        "TargetGroupStickinessConfig": {
+                                            "Enabled": false
+                                        }
+                                    }
+                                }
+                            ],
+                            "conditions": []
+                        }
+                    ]
+                },
+                "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener/app/dev-load-balancer/aa09e32587ce1e00/9cb45c5a85f5b536": {
+                    "region": "us-east-1",
+                    "port": 443,
+                    "protocol": "HTTPS",
+                    "ssl_policy": "ELBSecurityPolicy-TLS13-1-2-2021-06",
+                    "rules": [
+                        {
+                            "arn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener-rule/app/dev-load-balancer/aa09e32587ce1e00/9cb45c5a85f5b536/fb6f475785a0a677",
+                            "actions": [
+                                {
+                                    "Type": "forward",
+                                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/dev-instance-target-group/a07434ac4e01e769",
+                                    "ForwardConfig": {
+                                        "TargetGroups": [
+                                            {
+                                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/dev-instance-target-group/a07434ac4e01e769",
+                                                "Weight": 1
+                                            }
+                                        ],
+                                        "TargetGroupStickinessConfig": {
+                                            "Enabled": false
+                                        }
+                                    }
+                                }
+                            ],
+                            "conditions": []
+                        }
+                    ]
+                }
+            },
+            "scheme": "internet-facing",
+            "availability_zones": {
+                "us-east-1a": "subnet-054174dde5debe280",
+                "us-east-1d": "subnet-062f0f3155a8aaca5",
+                "us-east-1c": "subnet-0c6bd228bd91b573d",
+                "us-east-1b": "subnet-0cd54bac3fb6d1108"
+            },
+            "tags": []
+        },
+        "arn:aws:elasticloadbalancing:us-east-1:975049982984:loadbalancer/app/prod-load-balancer/a07ee262791494ab": {
+            "name": "prod-load-balancer",
+            "region": "us-east-1",
+            "type": "application",
+            "access_logs": "false",
+            "desync_mitigation_mode": "defensive",
+            "deletion_protection": "false",
+            "dns": "prod-load-balancer-1778958623.us-east-1.elb.amazonaws.com",
+            "drop_invalid_header_fields": "false",
+            "listeners": {
+                "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener/app/prod-load-balancer/a07ee262791494ab/3f254903c11be0ec": {
+                    "region": "us-east-1",
+                    "port": 443,
+                    "protocol": "HTTPS",
+                    "ssl_policy": "ELBSecurityPolicy-TLS13-1-2-2021-06",
+                    "rules": [
+                        {
+                            "arn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener-rule/app/prod-load-balancer/a07ee262791494ab/3f254903c11be0ec/e13f94871e6bdbd9",
+                            "actions": [
+                                {
+                                    "Type": "forward",
+                                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/prod-app-target-group/99202d3b119811b0",
+                                    "Order": 1,
+                                    "ForwardConfig": {
+                                        "TargetGroups": [
+                                            {
+                                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/prod-app-target-group/99202d3b119811b0",
+                                                "Weight": 1
+                                            }
+                                        ],
+                                        "TargetGroupStickinessConfig": {
+                                            "Enabled": false,
+                                            "DurationSeconds": 3600
+                                        }
+                                    }
+                                }
+                            ],
+                            "conditions": []
+                        }
+                    ]
+                },
+                "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener/app/prod-load-balancer/a07ee262791494ab/d18029810cbb720e": {
+                    "region": "us-east-1",
+                    "port": 80,
+                    "protocol": "HTTP",
+                    "ssl_policy": "",
+                    "rules": [
+                        {
+                            "arn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:listener-rule/app/prod-load-balancer/a07ee262791494ab/d18029810cbb720e/6249ec938d069668",
+                            "actions": [
+                                {
+                                    "Type": "forward",
+                                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/prod-app-target-group/99202d3b119811b0",
+                                    "ForwardConfig": {
+                                        "TargetGroups": [
+                                            {
+                                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:975049982984:targetgroup/prod-app-target-group/99202d3b119811b0",
+                                                "Weight": 1
+                                            }
+                                        ],
+                                        "TargetGroupStickinessConfig": {
+                                            "Enabled": false
+                                        }
+                                    }
+                                }
+                            ],
+                            "conditions": []
+                        }
+                    ]
+                }
+            },
+            "scheme": "internet-facing",
+            "availability_zones": {
+                "us-east-1a": "subnet-054174dde5debe280",
+                "us-east-1d": "subnet-062f0f3155a8aaca5",
+                "us-east-1c": "subnet-0c6bd228bd91b573d",
+                "us-east-1b": "subnet-0cd54bac3fb6d1108"
+            },
+            "tags": []
+        }
+    }
+}

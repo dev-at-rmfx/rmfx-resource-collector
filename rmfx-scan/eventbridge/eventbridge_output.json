@@ -1,0 +1,147 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "events",
+    "region": "us-east-1",
+    "buses": {
+        "arn:aws:events:ap-south-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ap-south-1:975049982984:event-bus/default",
+            "region": "ap-south-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:eu-west-3:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:eu-west-3:975049982984:event-bus/default",
+            "region": "eu-west-3",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:eu-west-2:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:eu-west-2:975049982984:event-bus/default",
+            "region": "eu-west-2",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:eu-central-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:eu-central-1:975049982984:event-bus/default",
+            "region": "eu-central-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:eu-west-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:eu-west-1:975049982984:event-bus/default",
+            "region": "eu-west-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:ap-northeast-2:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ap-northeast-2:975049982984:event-bus/default",
+            "region": "ap-northeast-2",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:ap-northeast-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ap-northeast-1:975049982984:event-bus/default",
+            "region": "ap-northeast-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:ap-southeast-2:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ap-southeast-2:975049982984:event-bus/default",
+            "region": "ap-southeast-2",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:ca-central-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ca-central-1:975049982984:event-bus/default",
+            "region": "ca-central-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:ap-southeast-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ap-southeast-1:975049982984:event-bus/default",
+            "region": "ap-southeast-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:ap-northeast-3:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:ap-northeast-3:975049982984:event-bus/default",
+            "region": "ap-northeast-3",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:us-west-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:us-west-1:975049982984:event-bus/default",
+            "region": "us-west-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:eu-north-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:eu-north-1:975049982984:event-bus/default",
+            "region": "eu-north-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:us-east-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:us-east-1:975049982984:event-bus/default",
+            "region": "us-east-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:us-east-2:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:us-east-2:975049982984:event-bus/default",
+            "region": "us-east-2",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:sa-east-1:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:sa-east-1:975049982984:event-bus/default",
+            "region": "sa-east-1",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        },
+        "arn:aws:events:us-west-2:975049982984:event-bus/default": {
+            "name": "default",
+            "arn": "arn:aws:events:us-west-2:975049982984:event-bus/default",
+            "region": "us-west-2",
+            "kms_key_id": null,
+            "policy": {},
+            "tags": []
+        }
+    }
+}

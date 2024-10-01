@@ -1,0 +1,206 @@
+{
+    "ec2": [
+        "./ec2/ec2_output.json"
+    ],
+    "redshift": [
+        "./redshift/redshift_output.json"
+    ],
+    "glue": [
+        "./glue/glue_output.json"
+    ],
+    "opensearch": [
+        "./opensearch/opensearch_output.json"
+    ],
+    "iam": [
+        "./iam/iam_output.json"
+    ],
+    "cloudtrail": [
+        "./cloudtrail/cloudtrail_output.json"
+    ],
+    "sagemaker": [
+        "./sagemaker/sagemaker_output.json"
+    ],
+    "codebuild": [
+        "./codebuild/codebuild_output.json"
+    ],
+    "ecr": [
+        "./ecr/ecr_output.json"
+    ],
+    "cloudwatch": [
+        "./cloudwatch/cloudwatch_output.json",
+        "./cloudwatch/logs_output.json"
+    ],
+    "ecs": [
+        "./ecs/ecs_output.json"
+    ],
+    "documentdb": [
+        "./documentdb/documentdb_output.json"
+    ],
+    "rds": [
+        "./rds/rds_output.json"
+    ],
+    "organizations": [
+        "./organizations/organizations_output.json"
+    ],
+    "sqs": [
+        "./sqs/sqs_output.json"
+    ],
+    "apigatewayv2": [
+        "./apigatewayv2/apigatewayv2_output.json"
+    ],
+    "dlm": [
+        "./dlm/dlm_output.json"
+    ],
+    "kms": [
+        "./kms/kms_output.json"
+    ],
+    "neptune": [
+        "./neptune/neptune_output.json"
+    ],
+    "s3": [
+        "./s3/s3_output.json",
+        "./s3/s3control_output.json"
+    ],
+    "cognito": [
+        "./cognito/cognito_idp_output.json",
+        "./cognito/cognito_identity_output.json"
+    ],
+    "athena": [
+        "./athena/athena_output.json"
+    ],
+    "elbv2": [
+        "./elbv2/elbv2_output.json"
+    ],
+    "account": [
+        "./account/account_output.json"
+    ],
+    "cloudfront": [
+        "./cloudfront/cloudfront_output.json"
+    ],
+    "cloudformation": [
+        "./cloudformation/cloudformation_output.json"
+    ],
+    "guardduty": [
+        "./guardduty/guardduty_output.json"
+    ],
+    "shield": [
+        "./shield/shield_output.json"
+    ],
+    "emr": [
+        "./emr/emr_output.json"
+    ],
+    "kafka": [
+        "./kafka/kafka_output.json"
+    ],
+    "lightsail": [
+        "./lightsail/lightsail_output.json"
+    ],
+    "directoryservice": [
+        "./directoryservice/directoryservice_output.json"
+    ],
+    "config": [
+        "./config/config_output.json"
+    ],
+    "eventbridge": [
+        "./eventbridge/schema_output.json",
+        "./eventbridge/eventbridge_output.json"
+    ],
+    "ssm": [
+        "./ssm/ssm_output.json"
+    ],
+    "eks": [
+        "./eks/eks_output.json"
+    ],
+    "route53": [
+        "./route53/route53domains_output.json",
+        "./route53/route53_output.json"
+    ],
+    "elasticache": [
+        "./elasticache/elasticache_output.json"
+    ],
+    "networkfirewall": [
+        "./networkfirewall/networkfirewall_output.json"
+    ],
+    "drs": [
+        "./drs/drs_output.json"
+    ],
+    "dynamodb": [
+        "./dynamodb/dax_output.json",
+        "./dynamodb/dynamodb_output.json"
+    ],
+    "vpc": [
+        "./vpc/vpc_output.json"
+    ],
+    "elb": [
+        "./elb/elb_output.json"
+    ],
+    "inspector2": [
+        "./inspector2/inspector2_output.json"
+    ],
+    "accessanalyzer": [
+        "./accessanalyzer/accessanalyzer_output.json"
+    ],
+    "backup": [
+        "./backup/backup_output.json"
+    ],
+    "securityhub": [
+        "./securityhub/securityhub_output.json"
+    ],
+    "acm": [
+        "./acm/acm_output.json"
+    ],
+    "awslambda": [
+        "./awslambda/awslambda_output.json"
+    ],
+    "macie": [
+        "./macie/macie_output.json"
+    ],
+    "glacier": [
+        "./glacier/glacier_output.json"
+    ],
+    "appstream": [
+        "./appstream/appstream_output.json"
+    ],
+    "sns": [
+        "./sns/sns_output.json"
+    ],
+    "storagegateway": [
+        "./storagegateway/storagegateway_output.json"
+    ],
+    "secretsmanager": [
+        "./secretsmanager/secretsmanager_output.json"
+    ],
+    "efs": [
+        "./efs/efs_output.json"
+    ],
+    "dms": [
+        "./dms/dms_output.json"
+    ],
+    "workspaces": [
+        "./workspaces/workspaces_output.json"
+    ],
+    "apigateway": [
+        "./apigateway/apigateway_output.json"
+    ],
+    "wafv2": [
+        "./wafv2/wafv2_output.json"
+    ],
+    "trustedadvisor": [
+        "./trustedadvisor/trustedadvisor_output.json"
+    ],
+    "wellarchitected": [
+        "./wellarchitected/wellarchitected_output.json"
+    ],
+    "codeartifact": [
+        "./codeartifact/codeartifact_output.json"
+    ],
+    "autoscaling": [
+        "./autoscaling/autoscaling_output.json"
+    ],
+    "fms": [
+        "./fms/fms_output.json"
+    ],
+    "ssmincidents": [
+        "./ssmincidents/ssmincidents_output.json"
+    ]
+}

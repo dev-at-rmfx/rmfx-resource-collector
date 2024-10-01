@@ -1,0 +1,12 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "ssm-incidents",
+    "region": "us-east-1",
+    "replication_set_arn_template": "arn:aws:ssm-incidents:us-east-1:975049982984:replication-set",
+    "replication_set": [],
+    "response_plans": []
+}

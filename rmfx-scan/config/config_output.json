@@ -1,0 +1,113 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "config",
+    "region": "us-east-1",
+    "recorders": [
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ap-south-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "eu-west-2"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "eu-west-3"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "eu-west-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "eu-central-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ap-northeast-2"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ap-southeast-2"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ap-northeast-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ca-central-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "us-west-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ap-southeast-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "sa-east-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "ap-northeast-3"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "eu-north-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "us-east-1"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "us-east-2"
+        },
+        {
+            "name": "975049982984",
+            "recording": null,
+            "last_status": null,
+            "region": "us-west-2"
+        }
+    ]
+}

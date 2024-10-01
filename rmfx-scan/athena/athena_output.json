@@ -1,0 +1,232 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "athena",
+    "region": "us-east-1",
+    "workgroups": {
+        "arn:aws:athena:ap-south-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ap-south-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ap-south-1",
+            "tags": []
+        },
+        "arn:aws:athena:eu-west-2:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:eu-west-2:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "eu-west-2",
+            "tags": []
+        },
+        "arn:aws:athena:eu-central-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:eu-central-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "eu-central-1",
+            "tags": []
+        },
+        "arn:aws:athena:eu-west-3:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:eu-west-3:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "eu-west-3",
+            "tags": []
+        },
+        "arn:aws:athena:ap-northeast-2:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ap-northeast-2:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ap-northeast-2",
+            "tags": []
+        },
+        "arn:aws:athena:eu-west-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:eu-west-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "eu-west-1",
+            "tags": []
+        },
+        "arn:aws:athena:ap-southeast-2:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ap-southeast-2:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ap-southeast-2",
+            "tags": []
+        },
+        "arn:aws:athena:ap-northeast-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ap-northeast-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ap-northeast-1",
+            "tags": []
+        },
+        "arn:aws:athena:ca-central-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ca-central-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ca-central-1",
+            "tags": []
+        },
+        "arn:aws:athena:us-west-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:us-west-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "us-west-1",
+            "tags": []
+        },
+        "arn:aws:athena:ap-southeast-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ap-southeast-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ap-southeast-1",
+            "tags": []
+        },
+        "arn:aws:athena:sa-east-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:sa-east-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "sa-east-1",
+            "tags": []
+        },
+        "arn:aws:athena:ap-northeast-3:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:ap-northeast-3:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "ap-northeast-3",
+            "tags": []
+        },
+        "arn:aws:athena:eu-north-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:eu-north-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "eu-north-1",
+            "tags": []
+        },
+        "arn:aws:athena:us-east-2:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:us-east-2:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "us-east-2",
+            "tags": []
+        },
+        "arn:aws:athena:us-east-1:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:us-east-1:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "us-east-1",
+            "tags": []
+        },
+        "arn:aws:athena:us-west-2:975049982984:workgroup/primary": {
+            "arn": "arn:aws:athena:us-west-2:975049982984:workgroup/primary",
+            "name": "primary",
+            "state": "ENABLED",
+            "encryption_configuration": {
+                "encryption_option": "",
+                "encrypted": false
+            },
+            "enforce_workgroup_configuration": false,
+            "queries": false,
+            "region": "us-west-2",
+            "tags": []
+        }
+    }
+}

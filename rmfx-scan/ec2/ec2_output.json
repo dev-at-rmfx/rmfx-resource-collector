@@ -1,0 +1,2688 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "ec2",
+    "region": "us-east-1",
+    "account_arn_template": "arn:aws:ec2:us-east-1:975049982984:account",
+    "instances": [
+        {
+            "id": "i-00ccc8e03fd1bbf10",
+            "arn": "arn:aws:ec2:ap-south-1:975049982984:instance/i-00ccc8e03fd1bbf10",
+            "state": "stopped",
+            "region": "ap-south-1",
+            "type": "t2.micro",
+            "image_id": "ami-0ad21ae1d0696ad58",
+            "launch_time": "2024-07-23T11:08:17+00:00",
+            "private_dns": "ip-172-31-15-117.ap-south-1.compute.internal",
+            "private_ip": "172.31.15.117",
+            "public_dns": "",
+            "public_ip": null,
+            "user_data": null,
+            "http_tokens": "required",
+            "http_endpoint": "enabled",
+            "monitoring_state": "disabled",
+            "security_groups": [
+                "sg-04cb4cba6359015d8"
+            ],
+            "subnet_id": "subnet-060dce89faac99c08",
+            "instance_profile": null,
+            "network_interfaces": [
+                "eni-0ee65c02743288865"
+            ],
+            "virtualization_type": "hvm",
+            "tags": null
+        },
+        {
+            "id": "i-04285d5567736b0c8",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:instance/i-04285d5567736b0c8",
+            "state": "running",
+            "region": "us-east-1",
+            "type": "t2.medium",
+            "image_id": "ami-0e86e20dae9224db8",
+            "launch_time": "2024-09-27T04:56:24+00:00",
+            "private_dns": "ip-172-31-91-60.ec2.internal",
+            "private_ip": "172.31.91.60",
+            "public_dns": "ec2-52-1-206-143.compute-1.amazonaws.com",
+            "public_ip": "52.1.206.143",
+            "user_data": null,
+            "http_tokens": "required",
+            "http_endpoint": "enabled",
+            "monitoring_state": "disabled",
+            "security_groups": [
+                "sg-0d2dffd5dfa9dcceb"
+            ],
+            "subnet_id": "subnet-062f0f3155a8aaca5",
+            "instance_profile": {
+                "Arn": "arn:aws:iam::975049982984:instance-profile/Dev-Application-Role",
+                "Id": "AIPA6GBMCAQECZFLBXTOZ"
+            },
+            "network_interfaces": [
+                "eni-0ffea1349f45b187b"
+            ],
+            "virtualization_type": "hvm",
+            "tags": [
+                {
+                    "Key": "Name",
+                    "Value": "dev-app-instance"
+                }
+            ]
+        },
+        {
+            "id": "i-0b160e8ae279b2a4c",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:instance/i-0b160e8ae279b2a4c",
+            "state": "running",
+            "region": "us-east-1",
+            "type": "t2.medium",
+            "image_id": "ami-0e86e20dae9224db8",
+            "launch_time": "2024-09-26T05:19:30+00:00",
+            "private_dns": "ip-172-31-85-207.ec2.internal",
+            "private_ip": "172.31.85.207",
+            "public_dns": "ec2-52-6-11-37.compute-1.amazonaws.com",
+            "public_ip": "52.6.11.37",
+            "user_data": null,
+            "http_tokens": "required",
+            "http_endpoint": "enabled",
+            "monitoring_state": "disabled",
+            "security_groups": [
+                "sg-02c3d9812d1a14ba6"
+            ],
+            "subnet_id": "subnet-062f0f3155a8aaca5",
+            "instance_profile": {
+                "Arn": "arn:aws:iam::975049982984:instance-profile/Prod-Application-Role",
+                "Id": "AIPA6GBMCAQECG2Y5LBHM"
+            },
+            "network_interfaces": [
+                "eni-0b5ab3a0cc1b43bda"
+            ],
+            "virtualization_type": "hvm",
+            "tags": [
+                {
+                    "Key": "Name",
+                    "Value": "prod-app-instance"
+                }
+            ]
+        }
+    ],
+    "security_groups": {
+        "arn:aws:ec2:ap-south-1:975049982984:security-group/sg-0d86d54c258405c94": {
+            "name": "default",
+            "region": "ap-south-1",
+            "id": "sg-0d86d54c258405c94",
+            "vpc_id": "vpc-0a6d5f87c68aa73bd",
+            "associated_sgs": [
+                "sg-0d86d54c258405c94"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0d86d54c258405c94",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ap-south-1:975049982984:security-group/sg-04cb4cba6359015d8": {
+            "name": "launch-wizard-1",
+            "region": "ap-south-1",
+            "id": "sg-04cb4cba6359015d8",
+            "vpc_id": "vpc-0a6d5f87c68aa73bd",
+            "associated_sgs": [],
+            "network_interfaces": [
+                {
+                    "id": "eni-0ee65c02743288865",
+                    "association": {},
+                    "attachment": {
+                        "AttachTime": "2024-07-23T11:08:17+00:00",
+                        "AttachmentId": "eni-attach-03330bffdb2e1d2d1",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "NetworkCardIndex": 0,
+                        "InstanceId": "i-00ccc8e03fd1bbf10",
+                        "InstanceOwnerId": "975049982984",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.15.117",
+                    "public_ip_addresses": [],
+                    "type": "interface",
+                    "subnet_id": "subnet-060dce89faac99c08",
+                    "vpc_id": "vpc-0a6d5f87c68aa73bd",
+                    "region": "ap-south-1",
+                    "tags": []
+                }
+            ],
+            "ingress_rules": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:eu-central-1:975049982984:security-group/sg-088e40a1ec91ec3a3": {
+            "name": "default",
+            "region": "eu-central-1",
+            "id": "sg-088e40a1ec91ec3a3",
+            "vpc_id": "vpc-0b0b41ecf30d2b8be",
+            "associated_sgs": [
+                "sg-088e40a1ec91ec3a3"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-088e40a1ec91ec3a3",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:eu-west-1:975049982984:security-group/sg-009da05c4d96f22d7": {
+            "name": "default",
+            "region": "eu-west-1",
+            "id": "sg-009da05c4d96f22d7",
+            "vpc_id": "vpc-0e193dba75d15101b",
+            "associated_sgs": [
+                "sg-009da05c4d96f22d7"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-009da05c4d96f22d7",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:eu-west-3:975049982984:security-group/sg-0fb030d4f972d8950": {
+            "name": "default",
+            "region": "eu-west-3",
+            "id": "sg-0fb030d4f972d8950",
+            "vpc_id": "vpc-02aae189bdd873c1a",
+            "associated_sgs": [
+                "sg-0fb030d4f972d8950"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0fb030d4f972d8950",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ap-southeast-2:975049982984:security-group/sg-05924acfbf4eeb9d1": {
+            "name": "default",
+            "region": "ap-southeast-2",
+            "id": "sg-05924acfbf4eeb9d1",
+            "vpc_id": "vpc-0879e1b2729bcc438",
+            "associated_sgs": [
+                "sg-05924acfbf4eeb9d1"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-05924acfbf4eeb9d1",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:eu-west-2:975049982984:security-group/sg-08778cae6bcc8c0d2": {
+            "name": "default",
+            "region": "eu-west-2",
+            "id": "sg-08778cae6bcc8c0d2",
+            "vpc_id": "vpc-0c5f17d19657aa12a",
+            "associated_sgs": [
+                "sg-08778cae6bcc8c0d2"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-08778cae6bcc8c0d2",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ap-northeast-2:975049982984:security-group/sg-06f07d2b31cd4533c": {
+            "name": "default",
+            "region": "ap-northeast-2",
+            "id": "sg-06f07d2b31cd4533c",
+            "vpc_id": "vpc-0edc5cd4929b2b3bd",
+            "associated_sgs": [
+                "sg-06f07d2b31cd4533c"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-06f07d2b31cd4533c",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ca-central-1:975049982984:security-group/sg-069d0503282320817": {
+            "name": "default",
+            "region": "ca-central-1",
+            "id": "sg-069d0503282320817",
+            "vpc_id": "vpc-0e6b14e9ec4fd7c70",
+            "associated_sgs": [
+                "sg-069d0503282320817"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-069d0503282320817",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-west-1:975049982984:security-group/sg-0926685829ad0c261": {
+            "name": "default",
+            "region": "us-west-1",
+            "id": "sg-0926685829ad0c261",
+            "vpc_id": "vpc-0bd3fbf071b14ff12",
+            "associated_sgs": [
+                "sg-0926685829ad0c261"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0926685829ad0c261",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ap-southeast-1:975049982984:security-group/sg-013053b65ce0804eb": {
+            "name": "default",
+            "region": "ap-southeast-1",
+            "id": "sg-013053b65ce0804eb",
+            "vpc_id": "vpc-0395d35d93ea894b7",
+            "associated_sgs": [
+                "sg-013053b65ce0804eb"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-013053b65ce0804eb",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:sa-east-1:975049982984:security-group/sg-057b5a8f0b86bf3a8": {
+            "name": "default",
+            "region": "sa-east-1",
+            "id": "sg-057b5a8f0b86bf3a8",
+            "vpc_id": "vpc-09c61314dd093efc3",
+            "associated_sgs": [
+                "sg-057b5a8f0b86bf3a8"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-057b5a8f0b86bf3a8",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ap-northeast-1:975049982984:security-group/sg-0a2e71a585532f80f": {
+            "name": "default",
+            "region": "ap-northeast-1",
+            "id": "sg-0a2e71a585532f80f",
+            "vpc_id": "vpc-04ef75db062fcb2a6",
+            "associated_sgs": [
+                "sg-0a2e71a585532f80f"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0a2e71a585532f80f",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:ap-northeast-3:975049982984:security-group/sg-02eff345cad56f013": {
+            "name": "default",
+            "region": "ap-northeast-3",
+            "id": "sg-02eff345cad56f013",
+            "vpc_id": "vpc-086f2fdba98ee03ba",
+            "associated_sgs": [
+                "sg-02eff345cad56f013"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-02eff345cad56f013",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-2:975049982984:security-group/sg-00a1b4c44e7f42a04": {
+            "name": "default",
+            "region": "us-east-2",
+            "id": "sg-00a1b4c44e7f42a04",
+            "vpc_id": "vpc-0e725976c3966f162",
+            "associated_sgs": [
+                "sg-00a1b4c44e7f42a04"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-00a1b4c44e7f42a04",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:eu-north-1:975049982984:security-group/sg-0c5a91b8b1718f583": {
+            "name": "default",
+            "region": "eu-north-1",
+            "id": "sg-0c5a91b8b1718f583",
+            "vpc_id": "vpc-051d93bb0d720da9a",
+            "associated_sgs": [
+                "sg-0c5a91b8b1718f583"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0c5a91b8b1718f583",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-05a04e21f4ecf3232": {
+            "name": "RDS-Public-Access",
+            "region": "us-east-1",
+            "id": "sg-05a04e21f4ecf3232",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "FromPort": 5432,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-069e4940fb07db0da": {
+            "name": "ec2-public-access",
+            "region": "us-east-1",
+            "id": "sg-069e4940fb07db0da",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "FromPort": 0,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 0,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-0514bfb44ab77a241": {
+            "name": "ec2-rds-1",
+            "region": "us-east-1",
+            "id": "sg-0514bfb44ab77a241",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [],
+            "ingress_rules": [],
+            "egress_rules": [
+                {
+                    "FromPort": 5432,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Rule to allow connections to rmfx-db from any instances this security group is attached to",
+                            "GroupId": "sg-0ee31c673cee829d5",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-0d40b0c961e279bc3": {
+            "name": "launch-wizard-1",
+            "region": "us-east-1",
+            "id": "sg-0d40b0c961e279bc3",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-0d2dffd5dfa9dcceb": {
+            "name": "default",
+            "region": "us-east-1",
+            "id": "sg-0d2dffd5dfa9dcceb",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [
+                {
+                    "id": "eni-0d6e2bc9f415e85c8",
+                    "association": {},
+                    "attachment": {
+                        "AttachTime": "2024-09-26T07:30:49+00:00",
+                        "AttachmentId": "eni-attach-0e838b5f5eeb0efc4",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "NetworkCardIndex": 0,
+                        "InstanceOwnerId": "amazon-rds",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.16.154",
+                    "public_ip_addresses": [],
+                    "type": "interface",
+                    "subnet_id": "subnet-054174dde5debe280",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0b8f966969d46a2a6",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-0aaff0cdd110ca620",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.45.199",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-0cd54bac3fb6d1108",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-08d5b69480a262867",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-09ae3d4f7c932743c",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.36.123",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-0cd54bac3fb6d1108",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-08b550a14d3160f09",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-0b19bef9b85b075fc",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.36.159",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-0cd54bac3fb6d1108",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-04b9f265866248628",
+                    "association": {
+                        "IpOwnerId": "amazon-elb",
+                        "PublicDnsName": "ec2-3-215-11-78.compute-1.amazonaws.com",
+                        "PublicIp": "3.215.11.78"
+                    },
+                    "attachment": {
+                        "AttachTime": "2024-09-26T16:35:17+00:00",
+                        "AttachmentId": "eni-attach-0b82de377dadee93b",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "NetworkCardIndex": 0,
+                        "InstanceOwnerId": "amazon-elb",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.36.167",
+                    "public_ip_addresses": [
+                        "3.215.11.78"
+                    ],
+                    "type": "interface",
+                    "subnet_id": "subnet-0cd54bac3fb6d1108",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-051b56624521c36ce",
+                    "association": {
+                        "IpOwnerId": "amazon-elb",
+                        "PublicDnsName": "ec2-3-231-65-202.compute-1.amazonaws.com",
+                        "PublicIp": "3.231.65.202"
+                    },
+                    "attachment": {
+                        "AttachTime": "2024-09-26T05:49:02+00:00",
+                        "AttachmentId": "eni-attach-0b86a9170e04aed0e",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "NetworkCardIndex": 0,
+                        "InstanceOwnerId": "amazon-elb",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.38.151",
+                    "public_ip_addresses": [
+                        "3.231.65.202"
+                    ],
+                    "type": "interface",
+                    "subnet_id": "subnet-0cd54bac3fb6d1108",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0fcbbe2fd845f1dea",
+                    "association": {},
+                    "attachment": {
+                        "AttachTime": "2024-09-25T09:20:06+00:00",
+                        "AttachmentId": "eni-attach-0265e833a0d96fd8d",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "NetworkCardIndex": 0,
+                        "InstanceOwnerId": "amazon-rds",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.18.119",
+                    "public_ip_addresses": [],
+                    "type": "interface",
+                    "subnet_id": "subnet-022da1ba8a93d5812",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0ac70b9506ea4a1c0",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-08163f4325dec63cb",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.4.44",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-0c6bd228bd91b573d",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0985cfbdc48d434d9",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-038230cbd0325db0f",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.2.143",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-0c6bd228bd91b573d",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-054a9c12c2e293527",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-054c5cbd9f7944dba",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.7.149",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-0c6bd228bd91b573d",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-03c93b494b99db100",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-0d946c999085bbf21",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.93.235",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0ac6fd436fcab3ed5",
+                    "association": {
+                        "IpOwnerId": "amazon-elb",
+                        "PublicDnsName": "ec2-52-54-219-222.compute-1.amazonaws.com",
+                        "PublicIp": "52.54.219.222"
+                    },
+                    "attachment": {
+                        "AttachTime": "2024-09-26T16:34:54+00:00",
+                        "AttachmentId": "eni-attach-09e7cd6cdd27958bc",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "NetworkCardIndex": 0,
+                        "InstanceOwnerId": "amazon-elb",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.90.217",
+                    "public_ip_addresses": [
+                        "52.54.219.222"
+                    ],
+                    "type": "interface",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0ffea1349f45b187b",
+                    "association": {
+                        "AllocationId": "eipalloc-0ed9bbcaa6793a82a",
+                        "AssociationId": "eipassoc-03f3817e7ab2b4c46",
+                        "IpOwnerId": "975049982984",
+                        "PublicDnsName": "ec2-52-1-206-143.compute-1.amazonaws.com",
+                        "PublicIp": "52.1.206.143"
+                    },
+                    "attachment": {
+                        "AttachTime": "2024-09-25T08:53:21+00:00",
+                        "AttachmentId": "eni-attach-0ceaf02ea2c718d48",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "NetworkCardIndex": 0,
+                        "InstanceId": "i-04285d5567736b0c8",
+                        "InstanceOwnerId": "975049982984",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.91.60",
+                    "public_ip_addresses": [
+                        "52.1.206.143"
+                    ],
+                    "type": "interface",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0b7931f4f72a6717c",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-0ed009f2cfd50930d",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.80.109",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0bcfba7301f7af75b",
+                    "association": {},
+                    "attachment": {
+                        "AttachmentId": "ela-attach-038fd4dd0c36d5779",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "InstanceOwnerId": "amazon-aws",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.87.242",
+                    "public_ip_addresses": [],
+                    "type": "vpc_endpoint",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                },
+                {
+                    "id": "eni-0cbd24ad771eebb49",
+                    "association": {
+                        "IpOwnerId": "amazon-elb",
+                        "PublicDnsName": "ec2-52-201-75-142.compute-1.amazonaws.com",
+                        "PublicIp": "52.201.75.142"
+                    },
+                    "attachment": {
+                        "AttachTime": "2024-09-26T05:49:00+00:00",
+                        "AttachmentId": "eni-attach-0cb4021d242c937e9",
+                        "DeleteOnTermination": false,
+                        "DeviceIndex": 1,
+                        "NetworkCardIndex": 0,
+                        "InstanceOwnerId": "amazon-elb",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.86.187",
+                    "public_ip_addresses": [
+                        "52.201.75.142"
+                    ],
+                    "type": "interface",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                }
+            ],
+            "ingress_rules": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 5432,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-02c3d9812d1a14ba6": {
+            "name": "launch-wizard-2",
+            "region": "us-east-1",
+            "id": "sg-02c3d9812d1a14ba6",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [
+                {
+                    "id": "eni-0b5ab3a0cc1b43bda",
+                    "association": {
+                        "AllocationId": "eipalloc-0a3238d5676ed1f4b",
+                        "AssociationId": "eipassoc-0d329cd3968dd41c6",
+                        "IpOwnerId": "975049982984",
+                        "PublicDnsName": "ec2-52-6-11-37.compute-1.amazonaws.com",
+                        "PublicIp": "52.6.11.37"
+                    },
+                    "attachment": {
+                        "AttachTime": "2024-09-26T05:19:30+00:00",
+                        "AttachmentId": "eni-attach-071a89f062865a702",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "NetworkCardIndex": 0,
+                        "InstanceId": "i-0b160e8ae279b2a4c",
+                        "InstanceOwnerId": "975049982984",
+                        "Status": "attached"
+                    },
+                    "private_ip": "172.31.85.207",
+                    "public_ip_addresses": [
+                        "52.6.11.37"
+                    ],
+                    "type": "interface",
+                    "subnet_id": "subnet-062f0f3155a8aaca5",
+                    "vpc_id": "vpc-0226aff95108a0bef",
+                    "region": "us-east-1",
+                    "tags": []
+                }
+            ],
+            "ingress_rules": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-033b1298493b086b7": {
+            "name": "Postgres-SG",
+            "region": "us-east-1",
+            "id": "sg-033b1298493b086b7",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "FromPort": 5432,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [
+                        {
+                            "CidrIpv6": "::/0"
+                        }
+                    ],
+                    "PrefixListIds": [],
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-0c9cd7bd9ab98635d": {
+            "name": "dev-rds-security-group",
+            "region": "us-east-1",
+            "id": "sg-0c9cd7bd9ab98635d",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "FromPort": 5432,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        },
+        "arn:aws:ec2:us-east-1:975049982984:security-group/sg-0ee31c673cee829d5": {
+            "name": "rds-ec2-1",
+            "region": "us-east-1",
+            "id": "sg-0ee31c673cee829d5",
+            "vpc_id": "vpc-0226aff95108a0bef",
+            "associated_sgs": [
+                "sg-0514bfb44ab77a241"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "FromPort": 5432,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5432,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Rule to allow connections from EC2 instances with sg-0514bfb44ab77a241 attached",
+                            "GroupId": "sg-0514bfb44ab77a241",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [],
+            "tags": null
+        },
+        "arn:aws:ec2:us-west-2:975049982984:security-group/sg-07a03c5c426775125": {
+            "name": "default",
+            "region": "us-west-2",
+            "id": "sg-07a03c5c426775125",
+            "vpc_id": "vpc-0beb0f4b51feac4ec",
+            "associated_sgs": [
+                "sg-07a03c5c426775125"
+            ],
+            "network_interfaces": [],
+            "ingress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-07a03c5c426775125",
+                            "UserId": "975049982984"
+                        }
+                    ]
+                }
+            ],
+            "egress_rules": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "tags": null
+        }
+    },
+    "regions_with_sgs": [
+        "ap-south-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1"
+    ],
+    "network_acls": {
+        "arn:aws:ec2:ap-south-1:975049982984:network-acl/acl-067650d2c92331a1a": {
+            "id": "acl-067650d2c92331a1a",
+            "arn": "arn:aws:ec2:ap-south-1:975049982984:network-acl/acl-067650d2c92331a1a",
+            "name": "",
+            "region": "ap-south-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:eu-west-1:975049982984:network-acl/acl-088ce134e0b4cee84": {
+            "id": "acl-088ce134e0b4cee84",
+            "arn": "arn:aws:ec2:eu-west-1:975049982984:network-acl/acl-088ce134e0b4cee84",
+            "name": "",
+            "region": "eu-west-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:eu-west-3:975049982984:network-acl/acl-095c174e4119b5d6e": {
+            "id": "acl-095c174e4119b5d6e",
+            "arn": "arn:aws:ec2:eu-west-3:975049982984:network-acl/acl-095c174e4119b5d6e",
+            "name": "",
+            "region": "eu-west-3",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:eu-central-1:975049982984:network-acl/acl-07dd69d5986a7d807": {
+            "id": "acl-07dd69d5986a7d807",
+            "arn": "arn:aws:ec2:eu-central-1:975049982984:network-acl/acl-07dd69d5986a7d807",
+            "name": "",
+            "region": "eu-central-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:ap-northeast-2:975049982984:network-acl/acl-08c1244ba7b79fae0": {
+            "id": "acl-08c1244ba7b79fae0",
+            "arn": "arn:aws:ec2:ap-northeast-2:975049982984:network-acl/acl-08c1244ba7b79fae0",
+            "name": "",
+            "region": "ap-northeast-2",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:eu-west-2:975049982984:network-acl/acl-0671124aeb028b261": {
+            "id": "acl-0671124aeb028b261",
+            "arn": "arn:aws:ec2:eu-west-2:975049982984:network-acl/acl-0671124aeb028b261",
+            "name": "",
+            "region": "eu-west-2",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:ca-central-1:975049982984:network-acl/acl-0e97d3ebc5644b055": {
+            "id": "acl-0e97d3ebc5644b055",
+            "arn": "arn:aws:ec2:ca-central-1:975049982984:network-acl/acl-0e97d3ebc5644b055",
+            "name": "",
+            "region": "ca-central-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:ap-southeast-2:975049982984:network-acl/acl-0e9c5d15892236c8f": {
+            "id": "acl-0e9c5d15892236c8f",
+            "arn": "arn:aws:ec2:ap-southeast-2:975049982984:network-acl/acl-0e9c5d15892236c8f",
+            "name": "",
+            "region": "ap-southeast-2",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:us-west-1:975049982984:network-acl/acl-07efca7182b99a70c": {
+            "id": "acl-07efca7182b99a70c",
+            "arn": "arn:aws:ec2:us-west-1:975049982984:network-acl/acl-07efca7182b99a70c",
+            "name": "",
+            "region": "us-west-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:ap-northeast-1:975049982984:network-acl/acl-09722afd7f7d04cc1": {
+            "id": "acl-09722afd7f7d04cc1",
+            "arn": "arn:aws:ec2:ap-northeast-1:975049982984:network-acl/acl-09722afd7f7d04cc1",
+            "name": "",
+            "region": "ap-northeast-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:ap-southeast-1:975049982984:network-acl/acl-01baff2e7bb8ab102": {
+            "id": "acl-01baff2e7bb8ab102",
+            "arn": "arn:aws:ec2:ap-southeast-1:975049982984:network-acl/acl-01baff2e7bb8ab102",
+            "name": "",
+            "region": "ap-southeast-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:sa-east-1:975049982984:network-acl/acl-02b98a6e44e3b7229": {
+            "id": "acl-02b98a6e44e3b7229",
+            "arn": "arn:aws:ec2:sa-east-1:975049982984:network-acl/acl-02b98a6e44e3b7229",
+            "name": "",
+            "region": "sa-east-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:ap-northeast-3:975049982984:network-acl/acl-0292dc1e19f422e3b": {
+            "id": "acl-0292dc1e19f422e3b",
+            "arn": "arn:aws:ec2:ap-northeast-3:975049982984:network-acl/acl-0292dc1e19f422e3b",
+            "name": "",
+            "region": "ap-northeast-3",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:us-east-2:975049982984:network-acl/acl-07b2ff1296240f768": {
+            "id": "acl-07b2ff1296240f768",
+            "arn": "arn:aws:ec2:us-east-2:975049982984:network-acl/acl-07b2ff1296240f768",
+            "name": "",
+            "region": "us-east-2",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:eu-north-1:975049982984:network-acl/acl-0ce7e7f4c5a905829": {
+            "id": "acl-0ce7e7f4c5a905829",
+            "arn": "arn:aws:ec2:eu-north-1:975049982984:network-acl/acl-0ce7e7f4c5a905829",
+            "name": "",
+            "region": "eu-north-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:us-east-1:975049982984:network-acl/acl-040023aed7caebe46": {
+            "id": "acl-040023aed7caebe46",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:network-acl/acl-040023aed7caebe46",
+            "name": "",
+            "region": "us-east-1",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        },
+        "arn:aws:ec2:us-west-2:975049982984:network-acl/acl-007326ae2a75f5949": {
+            "id": "acl-007326ae2a75f5949",
+            "arn": "arn:aws:ec2:us-west-2:975049982984:network-acl/acl-007326ae2a75f5949",
+            "name": "",
+            "region": "us-west-2",
+            "entries": [
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": true,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "allow",
+                    "RuleNumber": 100
+                },
+                {
+                    "CidrBlock": "0.0.0.0/0",
+                    "Egress": false,
+                    "Protocol": "-1",
+                    "RuleAction": "deny",
+                    "RuleNumber": 32767
+                }
+            ],
+            "default": true,
+            "in_use": true,
+            "tags": []
+        }
+    },
+    "snapshots": [],
+    "volumes_with_snapshots": {},
+    "regions_with_snapshots": {
+        "ap-south-1": false,
+        "eu-central-1": false,
+        "eu-west-2": false,
+        "ap-northeast-2": false,
+        "eu-west-3": false,
+        "eu-west-1": false,
+        "ap-southeast-2": false,
+        "ca-central-1": false,
+        "us-west-1": false,
+        "ap-northeast-1": false,
+        "ap-southeast-1": false,
+        "sa-east-1": false,
+        "ap-northeast-3": false,
+        "us-east-2": false,
+        "eu-north-1": false,
+        "us-east-1": false,
+        "us-west-2": false
+    },
+    "network_interfaces": {
+        "eni-0ee65c02743288865": null,
+        "eni-0d6e2bc9f415e85c8": null,
+        "eni-0b8f966969d46a2a6": null,
+        "eni-08d5b69480a262867": null,
+        "eni-08b550a14d3160f09": null,
+        "eni-04b9f265866248628": null,
+        "eni-051b56624521c36ce": null,
+        "eni-0fcbbe2fd845f1dea": null,
+        "eni-0ac70b9506ea4a1c0": null,
+        "eni-0985cfbdc48d434d9": null,
+        "eni-054a9c12c2e293527": null,
+        "eni-03c93b494b99db100": null,
+        "eni-0ac6fd436fcab3ed5": null,
+        "eni-0ffea1349f45b187b": null,
+        "eni-0b7931f4f72a6717c": null,
+        "eni-0bcfba7301f7af75b": null,
+        "eni-0b5ab3a0cc1b43bda": null,
+        "eni-0cbd24ad771eebb49": null
+    },
+    "images": [],
+    "volumes": [
+        {
+            "id": "vol-0b3ae95bcb92d61a7",
+            "arn": "arn:aws:ec2:ap-south-1:975049982984:volume/vol-0b3ae95bcb92d61a7",
+            "region": "ap-south-1",
+            "encrypted": false,
+            "tags": null
+        },
+        {
+            "id": "vol-0b7dcaab3639a548c",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:volume/vol-0b7dcaab3639a548c",
+            "region": "us-east-1",
+            "encrypted": false,
+            "tags": null
+        },
+        {
+            "id": "vol-073ff3137d8915875",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:volume/vol-073ff3137d8915875",
+            "region": "us-east-1",
+            "encrypted": false,
+            "tags": null
+        }
+    ],
+    "attributes_for_regions": {
+        "eu-west-3": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "ca-central-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "eu-west-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "eu-west-2": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "eu-central-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "sa-east-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "ap-southeast-2": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "ap-south-1": {
+            "has_instances": true,
+            "has_snapshots": false,
+            "has_volumes": true
+        },
+        "ap-northeast-2": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "us-west-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "ap-northeast-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "us-east-2": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "ap-southeast-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "ap-northeast-3": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "us-east-1": {
+            "has_instances": true,
+            "has_snapshots": false,
+            "has_volumes": true
+        },
+        "eu-north-1": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        },
+        "us-west-2": {
+            "has_instances": false,
+            "has_snapshots": false,
+            "has_volumes": false
+        }
+    },
+    "ebs_encryption_by_default": [
+        {
+            "status": false,
+            "volumes": true,
+            "region": "ap-south-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "eu-west-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "eu-central-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "ap-northeast-2"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "eu-west-2"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "ap-northeast-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "ca-central-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "eu-west-3"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "ap-southeast-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "us-west-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "ap-southeast-2"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "sa-east-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "ap-northeast-3"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "us-east-2"
+        },
+        {
+            "status": false,
+            "volumes": true,
+            "region": "us-east-1"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "us-west-2"
+        },
+        {
+            "status": false,
+            "volumes": false,
+            "region": "eu-north-1"
+        }
+    ],
+    "elastic_ips": [
+        {
+            "public_ip": "52.1.206.143",
+            "association_id": "eipassoc-03f3817e7ab2b4c46",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:eip-allocation/eipalloc-0ed9bbcaa6793a82a",
+            "allocation_id": "eipalloc-0ed9bbcaa6793a82a",
+            "region": "us-east-1",
+            "tags": [
+                {
+                    "Key": "Name",
+                    "Value": "dev-elastic-ip"
+                }
+            ]
+        },
+        {
+            "public_ip": "52.6.11.37",
+            "association_id": "eipassoc-0d329cd3968dd41c6",
+            "arn": "arn:aws:ec2:us-east-1:975049982984:eip-allocation/eipalloc-0a3238d5676ed1f4b",
+            "allocation_id": "eipalloc-0a3238d5676ed1f4b",
+            "region": "us-east-1",
+            "tags": [
+                {
+                    "Key": "Name",
+                    "Value": "prod-elastic-ip"
+                }
+            ]
+        }
+    ],
+    "ebs_block_public_access_snapshots_states": [
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ap-south-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "eu-west-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "eu-central-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "eu-west-2"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ap-southeast-2"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ca-central-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "eu-west-3"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "sa-east-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ap-southeast-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ap-northeast-2"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ap-northeast-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "ap-northeast-3"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "us-west-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "us-east-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "eu-north-1"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "us-east-2"
+        },
+        {
+            "status": "unblocked",
+            "snapshots": false,
+            "region": "us-west-2"
+        }
+    ],
+    "instance_metadata_defaults": [
+        {
+            "http_tokens": null,
+            "instances": true,
+            "region": "ap-south-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "eu-west-2"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "eu-central-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "eu-west-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "ap-northeast-2"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "eu-west-3"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "ap-southeast-2"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "ap-northeast-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "us-west-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "sa-east-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "ca-central-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "ap-southeast-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "ap-northeast-3"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "eu-north-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": true,
+            "region": "us-east-1"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "us-east-2"
+        },
+        {
+            "http_tokens": null,
+            "instances": false,
+            "region": "us-west-2"
+        }
+    ],
+    "launch_templates": [],
+    "vpn_endpoints": {},
+    "transit_gateways": {}
+}

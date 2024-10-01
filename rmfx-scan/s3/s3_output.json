@@ -1,0 +1,214 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "s3",
+    "region": "us-east-1",
+    "account_arn_template": "arn:aws:s3:us-east-1:975049982984:account",
+    "regions_with_buckets": [
+        "us-east-1",
+        "us-east-1",
+        "us-east-1",
+        "us-east-1"
+    ],
+    "buckets": {
+        "arn:aws:s3:::rmfx-app-builds-dev": {
+            "name": "rmfx-app-builds-dev",
+            "versioning": false,
+            "logging": false,
+            "public_access_block": {
+                "block_public_acls": true,
+                "ignore_public_acls": true,
+                "block_public_policy": true,
+                "restrict_public_buckets": true
+            },
+            "acl_grantees": [
+                {
+                    "display_name": "dev",
+                    "ID": "5168ee81dea1677b6fdad6dec85b44c6fa660a5ee7176b14701e685b9005a8bd",
+                    "type": "CanonicalUser",
+                    "URI": null,
+                    "permission": "FULL_CONTROL"
+                }
+            ],
+            "policy": {
+                "Version": "2008-10-17",
+                "Id": "PolicyForCloudFrontPrivateContent",
+                "Statement": [
+                    {
+                        "Sid": "AllowCloudFrontServicePrincipal",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloudfront.amazonaws.com"
+                        },
+                        "Action": "s3:GetObject",
+                        "Resource": "arn:aws:s3:::rmfx-app-builds-dev/*",
+                        "Condition": {
+                            "StringEquals": {
+                                "AWS:SourceArn": "arn:aws:cloudfront::975049982984:distribution/EZWMT24GZFUR6"
+                            }
+                        }
+                    }
+                ]
+            },
+            "encryption": "AES256",
+            "region": "us-east-1",
+            "logging_target_bucket": null,
+            "ownership": "BucketOwnerEnforced",
+            "object_lock": false,
+            "mfa_delete": false,
+            "tags": [],
+            "lifecycle": [],
+            "replication_rules": []
+        },
+        "arn:aws:s3:::rmfx-app-builds-prod": {
+            "name": "rmfx-app-builds-prod",
+            "versioning": false,
+            "logging": false,
+            "public_access_block": {
+                "block_public_acls": true,
+                "ignore_public_acls": true,
+                "block_public_policy": true,
+                "restrict_public_buckets": true
+            },
+            "acl_grantees": [
+                {
+                    "display_name": "dev",
+                    "ID": "5168ee81dea1677b6fdad6dec85b44c6fa660a5ee7176b14701e685b9005a8bd",
+                    "type": "CanonicalUser",
+                    "URI": null,
+                    "permission": "FULL_CONTROL"
+                }
+            ],
+            "policy": {
+                "Version": "2008-10-17",
+                "Id": "PolicyForCloudFrontPrivateContent",
+                "Statement": [
+                    {
+                        "Sid": "AllowCloudFrontServicePrincipal",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloudfront.amazonaws.com"
+                        },
+                        "Action": "s3:GetObject",
+                        "Resource": "arn:aws:s3:::rmfx-app-builds-prod/*",
+                        "Condition": {
+                            "StringEquals": {
+                                "AWS:SourceArn": "arn:aws:cloudfront::975049982984:distribution/EXQ1KYSRKH4XC"
+                            }
+                        }
+                    }
+                ]
+            },
+            "encryption": "AES256",
+            "region": "us-east-1",
+            "logging_target_bucket": null,
+            "ownership": "BucketOwnerEnforced",
+            "object_lock": false,
+            "mfa_delete": false,
+            "tags": [],
+            "lifecycle": [],
+            "replication_rules": []
+        },
+        "arn:aws:s3:::rmfx-app-file-uploads": {
+            "name": "rmfx-app-file-uploads",
+            "versioning": false,
+            "logging": false,
+            "public_access_block": {
+                "block_public_acls": true,
+                "ignore_public_acls": true,
+                "block_public_policy": true,
+                "restrict_public_buckets": true
+            },
+            "acl_grantees": [
+                {
+                    "display_name": "dev",
+                    "ID": "5168ee81dea1677b6fdad6dec85b44c6fa660a5ee7176b14701e685b9005a8bd",
+                    "type": "CanonicalUser",
+                    "URI": null,
+                    "permission": "FULL_CONTROL"
+                }
+            ],
+            "policy": {
+                "Version": "2008-10-17",
+                "Id": "PolicyForCloudFrontPrivateContent",
+                "Statement": [
+                    {
+                        "Sid": "AllowCloudFrontServicePrincipal",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloudfront.amazonaws.com"
+                        },
+                        "Action": "s3:GetObject",
+                        "Resource": "arn:aws:s3:::rmfx-app-file-uploads/*",
+                        "Condition": {
+                            "StringEquals": {
+                                "AWS:SourceArn": "arn:aws:cloudfront::975049982984:distribution/E15RRPSJ835HVJ"
+                            }
+                        }
+                    }
+                ]
+            },
+            "encryption": "AES256",
+            "region": "us-east-1",
+            "logging_target_bucket": null,
+            "ownership": "BucketOwnerEnforced",
+            "object_lock": false,
+            "mfa_delete": false,
+            "tags": [],
+            "lifecycle": [],
+            "replication_rules": []
+        },
+        "arn:aws:s3:::rmfx-app-file-uploads-prod": {
+            "name": "rmfx-app-file-uploads-prod",
+            "versioning": false,
+            "logging": false,
+            "public_access_block": {
+                "block_public_acls": true,
+                "ignore_public_acls": true,
+                "block_public_policy": true,
+                "restrict_public_buckets": true
+            },
+            "acl_grantees": [
+                {
+                    "display_name": "dev",
+                    "ID": "5168ee81dea1677b6fdad6dec85b44c6fa660a5ee7176b14701e685b9005a8bd",
+                    "type": "CanonicalUser",
+                    "URI": null,
+                    "permission": "FULL_CONTROL"
+                }
+            ],
+            "policy": {
+                "Version": "2008-10-17",
+                "Id": "PolicyForCloudFrontPrivateContent",
+                "Statement": [
+                    {
+                        "Sid": "AllowCloudFrontServicePrincipal",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloudfront.amazonaws.com"
+                        },
+                        "Action": "s3:GetObject",
+                        "Resource": "arn:aws:s3:::rmfx-app-file-uploads-prod/*",
+                        "Condition": {
+                            "StringEquals": {
+                                "AWS:SourceArn": "arn:aws:cloudfront::975049982984:distribution/E1EII5NVC67C7H"
+                            }
+                        }
+                    }
+                ]
+            },
+            "encryption": "AES256",
+            "region": "us-east-1",
+            "logging_target_bucket": null,
+            "ownership": "BucketOwnerEnforced",
+            "object_lock": false,
+            "mfa_delete": false,
+            "tags": [],
+            "lifecycle": [],
+            "replication_rules": []
+        }
+    }
+}

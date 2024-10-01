@@ -1,0 +1,131 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "ecr",
+    "region": "us-east-1",
+    "registry_id": "975049982984",
+    "registries": {
+        "ap-south-1": {
+            "id": "975049982984",
+            "region": "ap-south-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "eu-west-2": {
+            "id": "975049982984",
+            "region": "eu-west-2",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "eu-central-1": {
+            "id": "975049982984",
+            "region": "eu-central-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "ap-southeast-2": {
+            "id": "975049982984",
+            "region": "ap-southeast-2",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "ca-central-1": {
+            "id": "975049982984",
+            "region": "ca-central-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "ap-southeast-1": {
+            "id": "975049982984",
+            "region": "ap-southeast-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "eu-west-1": {
+            "id": "975049982984",
+            "region": "eu-west-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "eu-west-3": {
+            "id": "975049982984",
+            "region": "eu-west-3",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "ap-northeast-2": {
+            "id": "975049982984",
+            "region": "ap-northeast-2",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "ap-northeast-3": {
+            "id": "975049982984",
+            "region": "ap-northeast-3",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "us-east-2": {
+            "id": "975049982984",
+            "region": "us-east-2",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "ap-northeast-1": {
+            "id": "975049982984",
+            "region": "ap-northeast-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "eu-north-1": {
+            "id": "975049982984",
+            "region": "eu-north-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "sa-east-1": {
+            "id": "975049982984",
+            "region": "sa-east-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "us-east-1": {
+            "id": "975049982984",
+            "region": "us-east-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "us-west-2": {
+            "id": "975049982984",
+            "region": "us-west-2",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        },
+        "us-west-1": {
+            "id": "975049982984",
+            "region": "us-west-1",
+            "repositories": [],
+            "scan_type": "BASIC",
+            "rules": []
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "service_name": "neptune",
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "neptune",
+    "region": "us-east-1",
+    "clusters": {
+        "arn:aws:rds:us-east-1:975049982984:cluster:db-neptune-1-vibhor": {
+            "arn": "arn:aws:rds:us-east-1:975049982984:cluster:db-neptune-1-vibhor",
+            "name": "db-neptune-1-vibhor",
+            "id": "cluster-7YOKGBJDIXHVD7QM2AN4NRLMUM",
+            "backup_retention_period": 1,
+            "encrypted": true,
+            "kms_key": "arn:aws:kms:us-east-1:975049982984:key/24d905ee-f9fc-4e91-9791-e90afe3bf885",
+            "multi_az": false,
+            "iam_auth": false,
+            "deletion_protection": false,
+            "copy_tags_to_snapshot": true,
+            "region": "us-east-1",
+            "db_subnet_group_id": "rds-ec2-db-subnet-group-1",
+            "subnets": [
+                "subnet-03342902d86c0d41f",
+                "subnet-0c45659661891ada6",
+                "subnet-0fc3c738d485b5291",
+                "subnet-06de928f4b9463289",
+                "subnet-07008ca0d788fed8b"
+            ],
+            "tags": [],
+            "cloudwatch_logs": []
+        }
+    },
+    "db_cluster_snapshots": [
+        {
+            "id": "rds:db-neptune-1-vibhor-2024-09-30-09-03",
+            "cluster_id": "db-neptune-1-vibhor",
+            "arn": "arn:aws:neptune:us-east-1:975049982984:cluster-snapshot:rds:db-neptune-1-vibhor-2024-09-30-09-03",
+            "public": false,
+            "encrypted": true,
+            "region": "us-east-1",
+            "tags": []
+        }
+    ]
+}

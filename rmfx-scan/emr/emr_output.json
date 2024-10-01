@@ -1,0 +1,63 @@
+{
+    "audited_account": "975049982984",
+    "audited_account_arn": "arn:aws:iam::975049982984:root",
+    "audited_partition": "aws",
+    "audit_resources": [],
+    "audited_checks": [],
+    "service": "emr",
+    "region": "us-east-1",
+    "clusters": {},
+    "block_public_access_configuration": {
+        "ap-south-1": {
+            "block_public_security_group_rules": true
+        },
+        "eu-west-2": {
+            "block_public_security_group_rules": true
+        },
+        "eu-west-1": {
+            "block_public_security_group_rules": true
+        },
+        "eu-west-3": {
+            "block_public_security_group_rules": true
+        },
+        "eu-central-1": {
+            "block_public_security_group_rules": true
+        },
+        "ap-northeast-2": {
+            "block_public_security_group_rules": true
+        },
+        "us-west-1": {
+            "block_public_security_group_rules": true
+        },
+        "ap-northeast-1": {
+            "block_public_security_group_rules": true
+        },
+        "sa-east-1": {
+            "block_public_security_group_rules": true
+        },
+        "ca-central-1": {
+            "block_public_security_group_rules": true
+        },
+        "ap-southeast-2": {
+            "block_public_security_group_rules": true
+        },
+        "ap-northeast-3": {
+            "block_public_security_group_rules": true
+        },
+        "ap-southeast-1": {
+            "block_public_security_group_rules": true
+        },
+        "us-east-2": {
+            "block_public_security_group_rules": true
+        },
+        "us-east-1": {
+            "block_public_security_group_rules": true
+        },
+        "eu-north-1": {
+            "block_public_security_group_rules": true
+        },
+        "us-west-2": {
+            "block_public_security_group_rules": true
+        }
+    }
+}
