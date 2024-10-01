@@ -53,7 +53,7 @@ To scan AWS resources, follow these steps:
    This will generate a folder called `rmfx-scan` and a zip file containing all scanned AWS resources, named `rmfx-scan-compressed.zip`.
 
 3. **Upload the Scan Results:**
-   - Once the folder and zip file are generated, upload the `rmfx-scan` folder to the Sources UI of your cloud management interface.
+   - Once the folder and zip file are generated, upload the `rmfx-scan` folder to the Sources UI of your RMFX interface.
 
 ## Additional Cloud Providers
 
