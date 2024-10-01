@@ -128,8 +128,6 @@ def class_to_dict(obj, seen=None):
         
 service_set = set()
 
-checks_to_execute =  ['cognito']
-
 for check_name in tqdm(checks_to_execute):
     try:
         service = check_name.split("_")[0]
