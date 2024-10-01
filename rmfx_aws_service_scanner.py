@@ -128,7 +128,7 @@ def class_to_dict(obj, seen=None):
         
 service_set = set()
 
-# checks_to_execute =  ['cognito', 'rds']
+checks_to_execute =  ['cognito']
 
 for check_name in tqdm(checks_to_execute):
     try:
@@ -196,4 +196,4 @@ folder_to_compress = f'{output_folder_path}'
 output_zip_file = f'{output_folder_path}/rmfx-scan-compressed'  # The output file (without extension)
 
 # Compress the folder into a zip file
-shutil.make_archive(f'{output_folder_path}', 'zip', folder_to_compress)
+shutil.make_archive(f'{output_zip_file}', 'zip', folder_to_compress)
